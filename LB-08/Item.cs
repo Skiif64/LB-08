@@ -2,18 +2,18 @@
 {
     public class Item
     {
-        public int Price { get; }
+        public int Value { get; }
         public int Weight { get; }        
 
         public Item(int price, int weight)
         {
-            Price = price;
+            Value = price;
             Weight = weight;
         }
 
         public override string ToString()
         {
-            return $"Цена - {Price, 3}; Вес - {Weight, 3};";
+            return $"Цена - {Value, 3}; Вес - {Weight, 3};";
         }
     }
 }

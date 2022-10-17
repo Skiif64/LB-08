@@ -19,12 +19,12 @@ namespace LB_08
                 new Item(15, 2),
                 new Item(48, 5)
             };
-            Console.WriteLine("Цена и вес предметов: ");
+            Console.WriteLine("Ценность и вес предметов: ");
             Console.WriteLine(string.Join<Item>("\n", items));
-            var size = 13;
-            Console.WriteLine($"Размер рюкзака: {size}");
+            var capacity = 13;
+            Console.WriteLine($"Размер рюкзака: {capacity}");
             var rucksack = new Rucksack();
-            var result = rucksack.GetMaximumValue(items, size);
+            var result = rucksack.GetMaximumValue(items, capacity);
             Console.WriteLine($"Наивысший показатель полезности: {result}");
             Console.ReadLine();
         }

@@ -12,8 +12,8 @@
                 for (int n = 1; n <= capacity; n++)
                 {// n - вместимости рюкзака
                     a[s, n] = a[s - 1, n];
-                    if (n >= items[s - 1].Weight && (a[s - 1, n - items[s - 1].Weight] + items[s - 1].Price >
-                    a[s, n])) a[s, n] = a[s - 1, n - items[s - 1].Weight] + items[s - 1].Price;
+                    if (n >= items[s - 1].Weight && (a[s - 1, n - items[s - 1].Weight] + items[s - 1].Value >
+                    a[s, n])) a[s, n] = a[s - 1, n - items[s - 1].Weight] + items[s - 1].Value;
                 }
             }
 
